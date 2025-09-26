@@ -1,5 +1,5 @@
 # solution 1
-def is_happy(n):
+def is_happy1(n):
     if len(str(n)) == 1:
         return n == 1
     else:
@@ -13,7 +13,7 @@ def sq_numbers(n):
     return sum(int(i) ** 2 for i in str(n))
 
 
-def is_happy(n):
+def is_happy2(n):
     if len(str(n)) == 1 and n != 1:
         return False
     if n == 1:
