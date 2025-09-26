@@ -1,11 +1,11 @@
 # solution 1
-def find_duplicate(array: list):
+def find_duplicate1(array: list):
     for i in range(len(array)):
         if array[i] == array[i + 1]:
             return array[i]
 
 # solution 2
-def find_duplicate(array):
+def find_duplicate2(array):
     fast, slow = 0, 0
     while True:
         slow = array[slow]
